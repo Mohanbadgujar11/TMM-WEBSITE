@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donation Form</title>
+    <link rel="stylesheet" href="donation.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+
+     <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="members.html">COMITTEE</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="Donation-form.html">DONATIONS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">SOCIAL-ACTIVITIES</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="photos.html">PHOTOS</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">CONTACT-US</a>
+        </li>
+    </ul>
+
+    <img style="display: block; margin: 0 auto;" src="images/text bappa mourya.avif" alt="Logo"><br>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <a href="#"><img style="width: 200px; height: 200px;" src="images/Donate-Now-1.png" alt="donation"></a>
+    <p style="padding-left: 40%;">Your generous donation helps us continue our work.</p>
+
+    <form style="padding-left: 25%; padding-right: 25%;" action="your_server_endpoint_here" method="POST">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="amount">Donation Amount:</label>
+            <input type="number" id="amount" name="amount" min="1" step="0.01" required>
+        </div>
+
+    
+
+        <div class="form-group">
+            <label for="message">Optional Message:</label>
+            <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+
+        <button type="submit">Donate Now</button>
+    </form>
+
+</body>
+</html>
